@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrai_workshop=self.webpackChunkrai_workshop||[]).push([[466],{4958:s=>{s.exports=JSON.parse('{"allTagsPath":"/rai-dashboard-workshop/blog/tags","slug":"/rai-dashboard-workshop/blog/tags/docusaurus","name":"docusaurus","count":4,"permalink":"/rai-dashboard-workshop/blog/tags/docusaurus"}')}}]);
