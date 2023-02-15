@@ -6,13 +6,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'Azure Responsible AI dashboard workshop',
   tagline: 'Global AI bootcamp',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://github.com',
+  baseUrl: '/rai-dashboard-workshop/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'rai-dashboard', // Usually your repo name.
+  organizationName: 'ruyakubu', // Usually your GitHub org/user name.
+  projectName: 'rai-dashboard-workshop', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
 
   presets: [
     [
