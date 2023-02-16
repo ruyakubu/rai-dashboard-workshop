@@ -12,11 +12,11 @@ In this lab, we will explore how to use the Data Analysis section of the Azure R
 
 ## Data Analysis: Table view
 
-The Table view helps in visualizing all the features and rows of the data in a selected cohort. The advantage of using this view is that we get see records of the raw data where the model made Correct vs Incorrect predictions. In addition, for each row of data, the dashboard includes a field for TrueY and PredictedY column for the user to be able to decipher common feature attributes from records where the model is incorrect.
+The Table view helps in visualizing all the features and rows of the data in a selected cohort. The advantage of using this view is that we get to see records of the raw data where the model made Correct vs Incorrect predictions. In addition, for each row of data, the dashboard includes a field for TrueY and PredictedY column for the user to be able to decipher common feature attributes from records where the model is incorrect.
 
 Since we want to analyze the data for when the model is performing poorly, switch the cohort for "All data" to ***"Err: Prior_Inpatient >0; Num_meds >11.50 & <= 21.50"***.
 
-1. Click on the "switch cohort" link on top of the dashboard.  The select the "Err: Prior_Inpatient >0; Num_meds >11.50 & <= 21.50" cohort under the "Cohort list" drop-down menu list.
+1. Click on the "switch cohort" link on top of the dashboard.  Then select the *"Err: Prior_Inpatient >0; Num_meds >11.50 & <= 21.50"* cohort under the "Cohort list" drop-down menu list.
 
 ![Switch Cohort](/img/tutorial/6-da-switch-cohort.png "Switch Cohort")	
 	
@@ -24,7 +24,7 @@ Since we want to analyze the data for when the model is performing poorly, switc
 
 ![Data analysis table view](/img/tutorial/6-da-table-view.png "Data analysis table view")	
 
-In our Diabetes Hospital Readmission use case, the Table view confirms the False Positive rates we saw in the Model Overview: Dataset cohort section. The record count from the Table shows that there 55 False Positive record where the patients are readmitted, but the model predicted not readmitted. There are 20 True Negative records where the patients were readmitted, and the model correctly predicted readmit. FP rate = 55/55+20 = 0.733. This is beneficial to be able to review the raw data for your cohort to see what the true vs predicted outcome are for your sample data. In addition, you can view common feature attributes for one class vs another.
+In our Diabetes Hospital Readmission use case, the Table view confirms the False Negative rates we saw in the Model Overview: Dataset cohort section. The record count from the Table shows that there 55 False Negative record where the patients are readmitted, but the model predicted not readmitted. There are 20 True Negative records where the patients were readmitted, and the model correctly predicted readmit. This is beneficial to be able to review the raw data for your cohort to see what the true vs predicted outcome are for your sample data. In addition, you can view common feature attributes for one class vs another.
 
 
 

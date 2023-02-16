@@ -8,7 +8,7 @@ slug: /analyze-feature-cohort
 
 ## Feature Cohorts performance metrics
 
-The RAI dashboard helps data scientist or AI developers examine the model performance across different cohorts within a given feature as well. Whether it is one feature, or a combination of two features, the RAI dashboard has built-in intelligence to divided feature values into various meaningful cohorts for users to do feature-based analysis and compare where the model is not doing well.  Since the cohort with the highest error has patients with the number of *Prior_Inpatient > 0* days and number of medications between 11 and 22 was where the model had a higher error rate, taking a closer look at the *“Prior_Inpatient”* and *"Num_medications”* will help isolate where there as issues.  For this lab, we'll only analyze *"Prior_Inpatient"*.  
+The RAI dashboard helps data scientist or AI developers examine the model performance across different cohorts within a given feature as well. Whether it is one feature, or a combination of two features, the RAI dashboard has built-in intelligence to divided feature values into various meaningful cohorts for users to do feature-based analysis and compare where the model is not doing well.  Since the cohort with the highest error has patients with the number of *Prior_Inpatient > 0* days and number of medications between 11 and 22 was where the model had a higher error rate, taking a closer look at the *“Prior_Inpatient”* and *"Num_medications”* will help isolate where there are issues.  For this lab, we'll only analyze *"Prior_Inpatient"*.  
 
 1. Click on the Feature Cohorts tab.
 2. Under the "Feature(s)" drop-down menu, scroll down the list and select the "prior_inpatient" checkbox. This will display 3 different feature cohorts and the model performance metrics.
@@ -29,7 +29,7 @@ Similar to the Dataset cohort, you have the ability to view the “Probability D
 
 ## Feature Metrics visualizations
 
-1. On the x-axis, click on the "Choose label" button.  Then select the "Precise score" metric.
+1. On the x-axis, click on the "Choose label" button.  Then select the "Precision score" metric.
 2. You see that the precision score for patients with *prior_inpatient < 3* is 0.40, which is very bad. This means that all the predictions that the model made, only 40% were correct for this cohort. 
 
 ![feature cohort precision](/img/tutorial/5-feature-cohort-precision.png "Feature cohort precision score")
@@ -37,17 +37,17 @@ Similar to the Dataset cohort, you have the ability to view the “Probability D
 
 3. The precision score for the other 2 cohorts are good.
 4. Next, select "Recall score" metric for the x-axis.
-5. On the contrary, you'll see the recall score for patients with *prior_inpatient < 3* is 0.013. Meaning, for a majority of patients in the test data, the model is having a difficulty correctly predicting whether the patient will be readmitted within 30 days or not.
+5. On the contrary, you'll see the recall score for patients with *prior_inpatient < 3* is 0.013. Meaning, for a majority of patients in the test data, the model is having difficulty correctly predicting whether the patient will be readmitted within 30 days or not.
 
 ![feature cohort recall](/img/tutorial/5-feature-cohort-recall.png "Feature cohort recall score")
 
 This lab shows how the traditional model performance metrics (e.g., accuracy, recall, confusion matrix etc) are still very important. By combining RAI insights and traditional performance metric, the dashboard gives us a wholistic tool to analyze and debug the model on a more granular level.
 
 
-Discussion question:
+Discussion questions:
 1. Did the Probability distribution chart look logical?
 2. What issues did you observe from the confusion matrix?  What hypothesis can you form based on the chart?
-3. What does this tell us about just look rely on one metric as Accuracy score.  What hypothesis can you form based on the extremely low Precision score?
+3. What does this tell us about only relying on one model performance metric such as Accuracy score.  What hypothesis can you form based on the extremely low Precision score?
 4. What correlation/consistencies are you starting to see between the Dataset vs Feature Cohort analysis?
 
  

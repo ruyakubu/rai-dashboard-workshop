@@ -34,27 +34,27 @@ The Probability distribution chart shows the model’s probability predicting if
 
 1. Compare the probability of the patients not being readmitted for all 3 cohorts.
 2. You'll see that the “All data” cohort with all the patients test dataset, show that a majority of the patients will not be readmitted back in the hospital within 30 days, with a median probability of patients not readmitted at 0.854 and upper quartile at 0.986, which is good. We would not want a high frequency of patients being readmitted back to a hospital in a few days after being discharged.
-3. Next, the cohort with the highest error rate:  Err: Prior_Inpatient >0; Num_meds >11.50 & <= 21.50, shows a slightly lower probability at 0.89 and a median of 0.719. 
-4. Lastly, the cohort with the least error rate: Prior_Inpatient = 0; num_diagnoses <= 6.50; lab_procedures <= 56.50,  show a probability of patients not readmitted has a median of 0.90 and upper quartile of 0.986. 
+3. Next, the cohort with the highest error rate:  ***Err: Prior_Inpatient >0; Num_meds >11.50 & <= 21.50***, shows a slightly lower probability at 0.89 and a median of 0.719. 
+4. Lastly, the cohort with the least error rate: *Prior_Inpatient = 0*; *num_diagnoses <= 6.50*; *lab_procedures <= 56.50*,  show a probability of patients not readmitted has a median of 0.90 and upper quartile of 0.986. 
 5. To change the chart to show the probability of patients being Readmitted for the 3 cohorts, click on the "Choose Label" button on the x-axis.
 
 ![dataset y-axis readmitted](/img/tutorial/4-dataset-y-reamitted.png "Dataset cohort Y-axis Readmitted")
 
-6. Select the "Probability:  Readmitted" radio button. On the pop window pane.
-7. Then click on "Apply" button.
+6. Select the "Probability:  Readmitted" radio button. On the pop-up window pane.
+7. Then click on the **"Apply"** button.
 8. Compare the probability of patients being Readmitted for the 3 cohorts
 
 ![dataset cohort metrics](/img/tutorial/4-dataset-probab-distrib-readmit.png "Dataset cohort metrics")
 
-9. You see that 3 cohort have a probability of being readmitted less than 0.55.  The cohort will the least number of model errors has the lowest probability of 0.179.  The cohort with the most errors has the highest probability at 0.543.
+9. You see that the 3 cohort have a probability of being readmitted less than 0.55.  The cohort will the least number of model errors has the lowest probability of 0.179.  The cohort with the most errors has the highest probability at 0.543.
 
 ## Review the Metric visualization chart
 
-Now let's get a deeper understanding of the model's performance by switching to the Metric visualizations pane. Since you've already reviewed the accuracy score under the "Dataset Cohort" above, you'll explore what other metrics can show about the 3 cohorts.
+Now let's get a deeper understanding of the model's performance by switching to the Metric visualizations pane. Since you've already reviewed the accuracy score under the "Dataset Cohort" above, you'll explore what the other metrics can reveal about the 3 cohorts.
 
 1. Click on the Metric visualizations tab.
 
-2. To choose another metric, click on the "Choose Label" on the x-axis to choose "Precision score" from the list of other available metrics.  Then click on the "Apply" button.
+2. To choose another metric, click on the "Choose Label" on the x-axis to choose "Precision score" from the list of other available metrics.  Then click on the **"Apply"** button.
 **Note**:  Since the trained model is a classification problem, the RAI dashboard will display only classification metrics.
 
 ![dataset cohort precision metrics](/img/tutorial/4-select-dataset-precision.png "Dataset cohort precision metrics")
@@ -73,9 +73,9 @@ The Confusion Matrix is helpful to check the rate of the model correctly making 
 
 ![dataset confusion matrix](/img/tutorial/4-dataset-confusion-matrix.png "Dataset confusion matrix")
 
-2. You will observe that the model is performing better with patient that are "Not Readmitted" compare to "Readmitted".  The number of True Negative should be more that False Positive.
+2. You will observe that the model is performing better with patient that are "Not Readmitted" compare to "Readmitted".  The number of False Negative should be less that True Negative.  This mean out of all the patient data, the model was only able to predict 24 patients correctly to be Readmitted back to the hospital in < 30 days.
 * The number of True Positive (TP) is:  802
-* The number of False Negative (FN) is: 9
-* The number of False Positive (FP) is: 159
+* The number of False Negative (FN) is: 159
+* The number of False Positive (FP) is: 9
 * The number of True Negative (TN) is: 24
 

@@ -4,13 +4,11 @@ sidebar_position: 1
 slug: /view-individual-feature-importance
 ---
 
-## Individual feature importance:  Table view
-
 The RAI dashboard Feature Importance section has a table view that enables users to see which records the model made a correct vs incorrect prediction.  You can use each individual patient's record to see which features positively or negatively drove that individual outcome. This is especially useful when debugging to see where the model is performing erroneously for a specific patient, and which features are positive or negative contributors.   In our case, you'll focus on the cohort with the highest errors.
 
 ![Individual Feature importance table](/img/tutorial/10-fi-table-view.png "Individual Feature importance table")
 
-1. Click on the "switch cohort" link on top of the dashboard.  The select the ***"Err: Prior_Inpatient >0; Num_meds >11.50 & <= 21.50"*** cohort under the "Cohort list" drop-down menu list.
+1. Click on the "switch cohort" link on top of the dashboard.  Then select the ***"Err: Prior_Inpatient >0; Num_meds >11.50 & <= 21.50"*** cohort under the "Cohort list" drop-down menu list.
 	
 ![Switch cohort](/img/tutorial/6-da-switch-cohort.png "Switch cohort")	
 
@@ -30,15 +28,15 @@ The RAI dashboard Feature Importance section has a table view that enables users
 	
 ## Individual conditional expectation (using ICE plot)
 
-The RAI dashboard gives you have the ability to select a feature and see the model's prediction for the different values in that feature using the Individual Conditional Expectation (ICE) plot. We use the same patients above:  record index #882 and #865.  We using the "A1CResult" feature to see the models prediction for its different values.
+The RAI dashboard gives you the ability to select a feature and see the model's prediction for the different values in that feature using the Individual Conditional Expectation (ICE) plot. We'll use the same patients above:  record index #882 and #865.  In addition, we'll use the "A1CResult" feature to see the models prediction for its different values.
 
 1. Select the "Individual Conditional Expectation (ICE) plot" radio button. 
 2. Next, in the Feature drop-down menu, we'll select *"A1CResult"*. The orange dots represent record index #882 that the model incorrectly predicted as Not Readmitted. The blue dots represent record index #865 that the model incorrectly predicted as Readmitted.
 
-![ICE feature influence](/img/tutorial/10-fi-datapts-feature-contribution.png "ICE feature influence")	
+![ICE feature influence](/img/tutorial/10-fi-ice-chart.png "ICE feature influence")	
 
 3. Under The ICE plot, you'll see the model's predictions for the different *"A1CResult"* values: "Norm", ">7", ">8" and "None" (the "None" when no A1C test). 
-4. As you can see the chart, a patient has the lowest chance of not being readmitted when the *"AICResult"* result is ">8" for record index #882 and #865. Both the orange and blue dots are showing the lowest point in their cluster at the ">8" mark on the axis, and the model's predicted probability of not readmitted is showing a low probability for both dots at the axis. This makes sense because an A1C result greater than 8 is considered a very high level and is serious for diabetic patients. Hence, the need to be Readmitted in combination of other factors. As you can see, this is a good way to see how a feature's value has impact on a model's prediction.
+4. As you can see from the chart, a patient has the lowest chance of not being readmitted when the *"A1CResult"* result is ">8" for record index #882 and #865. Both the orange and blue dots are showing the lowest point in their cluster at the ">8" mark on the axis, and the model's predicted probability of not readmitted is showing a low probability for both dots at the axis. This makes sense because an A1C result greater than 8 is considered a very high level and is serious for diabetic patients. Hence, the need to be Readmitted in combination with other factors. As you can see, this is a good way to see how a feature's value has impact on a model's prediction.
 	
 This lab shows how the Feature Importance removes the black box way of not knowing how the model went about making a prediction. It’s a global understanding of what key features the model uses to make a prediction. In addition, for each feature the user has the ability to explore and visualize how it is positively or negatively influencing the model’s prediction for one class vs another for each value in the feature. This exposes the thresholds the model has to produce a certain outcome. We saw this in the *“Number_Diagnoses”* feature. 
 

@@ -4,7 +4,7 @@ sidebar_position: 2
 slug: /find-heatmap-errors
 ---
 
-## Use Heat map to analysis feature contributing to higher error
+## Use Heat map to analyze feature contributing to higher errors
 
 From the Feature List, "Age" was one of the top error contributors. So, we'll use the Heat map tab to explore which age group of the patients are driving the model to perform poorly.
 

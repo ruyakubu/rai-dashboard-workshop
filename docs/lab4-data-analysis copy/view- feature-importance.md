@@ -8,8 +8,8 @@ slug: /view-feature-importance
 
 Part of training a model is not just to see how accurate it can make a prediction, but why it made the prediction.   Understanding and explaining a model’s behavior is part of ensuring it is fair, inclusive, reliable and accountable.  Some industries have compliance regulations that require organizations to provide an explanation for how and why a model made the prediction it did. The Azure Responsible AI (RAI) dashboard provides the Feature Importance section that is an interactive user interface (UI) which enables data scientists or AI developers to see top features in their dataset that drove a model’s prediction.
 
-The Feature Importance section of the dashboard help provide a better understanding of the model’s behavior. The dashboard provides both Global and Local explanations. For example:
-* *Global Explanation*: What are the top factors impacting overall model predictions?
+The Feature Importance section of the dashboard helps provide a better understanding of the model’s behavior. The dashboard provides both Global and Local explanations. For example:
+* *Global Explanation*: What are the top factor impacting the model's overrall predictions?
 * *Local Explanation*: Why did patient X get readmitted in the hospital in less than 30 days? Here, the dashboard could drill-down to the test dataset and show that Patient X has been predicted to be readmitted within 30 days in a hospital because of a history of other diagnoses.
 	
 In this lab, you will explore how to use the Feature Importance section of the RAI dashboard.
@@ -34,7 +34,7 @@ The RAI dashboard displays the top data features that drove a model’s overall 
 	
 3. The x-axis displays the number of diagnoses were entered into the system for the diabetic patient. 
 4. The y-axis displays, the level of contribution to the model making a prediction of Not Readmitted. Where numbers above 0 show the level of positive contribution to the model's prediction of a patient Not Readmitted and numbers below 0 show the level of negative contribution against the model's prediction for Not Readmitted.
-5. As you can see from the graph, as we progress from 0 to 11 in the number of "number_diagnoses" the more the model's confidence in a patient not readmitted within 30 days back to the hospital increases. 
+5. As you can see from the graph, as we progress from 0 to 11 in the number of *"number_diagnoses"* the more the model's confidence in a patient not readmitted within 30 days back to the hospital decrease. 
 6. The chart shows that after 7 number of diagnoses, the class starts to negatively impact the "Not Readmitted classification", which leads to a "Readmitted" classification. This makes sense because the more a diabetic patient has other additional medical conditions, the more prone they are to getting sick and returning back to the hospital again.
 
 	
