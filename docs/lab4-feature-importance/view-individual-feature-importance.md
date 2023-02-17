@@ -40,5 +40,7 @@ The RAI dashboard gives you the ability to select a feature and see the model's 
 	
 This lab shows how the Feature Importance removes the black box way of not knowing how the model went about making a prediction. It’s a global understanding of what key features the model uses to make a prediction. In addition, for each feature the user has the ability to explore and visualize how it is positively or negatively influencing the model’s prediction for one class vs another for each value in the feature. This exposes the thresholds the model has to produce a certain outcome. We saw this in the *“Number_Diagnoses”* feature. 
 
+## Shutdown
 
+Be sure to [shutdown your compute](/docs/stop-compute) instance.
 

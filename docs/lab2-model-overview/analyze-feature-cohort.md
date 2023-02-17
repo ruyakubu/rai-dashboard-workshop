@@ -42,12 +42,3 @@ Similar to the Dataset cohort, you have the ability to view the “Probability D
 ![feature cohort recall](/img/tutorial/5-feature-cohort-recall.png "Feature cohort recall score")
 
 This lab shows how the traditional model performance metrics (e.g., accuracy, recall, confusion matrix etc) are still very important. By combining RAI insights and traditional performance metric, the dashboard gives us a wholistic tool to analyze and debug the model on a more granular level.
-
-
-Discussion questions:
-1. Did the Probability distribution chart look logical?
-2. What issues did you observe from the confusion matrix?  What hypothesis can you form based on the chart?
-3. What does this tell us about only relying on one model performance metric such as Accuracy score.  What hypothesis can you form based on the extremely low Precision score?
-4. What correlation/consistencies are you starting to see between the Dataset vs Feature Cohort analysis?
-
- 

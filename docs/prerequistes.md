@@ -10,17 +10,25 @@ In order to successfully complete this workshop you'll need Azure credits.  The 
 
 ## Install and Setup your cloud resources
 
-We'll be using Github codespaces to automate and expedite creating your Azure Machine Learning workspace; as well as running the jobs to train and register your model.  And finally, created the Responsible AI dashboard that you'll be using in this workshop.
+We'll be using Azure Cloud Shell to automate and expedite creating your Azure Machine Learning workspace; as well as running the jobs to train and register your model.  You'll be using a bash script.  And finally, created the Responsible AI dashboard that you'll be using in this workshop.
 
-To get started, go to the project Github repo: https://github.com/ruyakubu/RAI-Diabetes-Hospital-Readmission-classification
+1. Log into the [Azure portal](http://portal.azure.com/) with your account subscription
 
-1. Click on the green **"Code"** button for the repository.
+![Azure Cloud Shell icon](/img/tutorial/azure-cloud-shell.png "Azure Cloud Shell icon")
 
-![Github code button](/img/tutorial/github-code-button.png "Github Code button")	
+2. Select the "Azure Cloud Shell" icon.  
 
-2. Switch the tab below from "Local" to **"Codespaces"**.
-3. Click on the "New Codespace" button.  This will launch a new browser window as it loads the dev container for this project.  **Note**:  This will take a couple of minutes.
-4. After the container is loaded, Visual Studio code will be launched in your browser.
+A command terminall will open at the bottom of the page.
+![Azure Cloud Shell terminal](/img/tutorial/cloud-shell-terminal.png "Azure Cloud Shell terminal")	
+
+3. In Azure Cloud Shell, clone the github repository
+```shell
+git clone https://github.com/ruyakubu/RAI-Diabetes-Hospital-Readmission-classification.git
+```
+4. Change to the project directory
+```shell
+cd RAI-Diabetes-Hospital-Readmission-classification
+```
 
 ### Azure Login
 
@@ -34,7 +42,7 @@ az account set -s <enter-your-subscription-id-here>
 ```
 ### Create Resource Group and Azure ML workspace
 
-7. Create an Azure resource group.  For [location](https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/?products=machine-learning-service), enter the region closest to you. 
+7. Create an Azure resource group.  For location, enter *westus*, *westus2*, *eastus* or *westeurope*,
 ```shell
 az group create --name <resource-group-name> --location <location>
 ```
@@ -63,12 +71,6 @@ bash cloud/setup.sh
 
 ![RAI dashboard pipeline](/img/tutorial/rai_dashboard_pipeline.png "RAI dashboard pipeline")	
 
-13. Terrific...you're ready to start using the dashboard!
+13. Terrific...you're ready to start using the dashboard!  
 
-
-## Disbetes Hospital Readmission repository
-
-You'll need to clone the GitHub repository for the Diabetes Hospital Readmission which contains the train and test dataset.  As well as the notebook to train and register the model.  In addition, we build the Responsible AI dashboard for the trained model.
-
-- https://github.com/ruyakubu/RAI-Diabetes-Hospital-Readmission-classification
-
+14. Click on the "Next" button below to proceed to the *Error Analysis* lab.
