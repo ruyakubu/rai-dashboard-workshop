@@ -4,8 +4,6 @@ sidebar_position: 2
 slug: /find-heatmap-errors
 ---
 
-## Use Heat map to analyze feature contributing to higher errors
-
 From the Feature List, "Age" was one of the top error contributors. So, we'll use the Heat map tab to explore which age group of the patients are driving the model to perform poorly.
 
 1. Under the Heat Map tab, select *"Age"* in the ***"Rows: Feature 1"*** drop-down menu to see what factor it plays in the model's errors. After selecting the *"Age"*, we can see how the dashboard has a built-in intelligence to divide the feature into different cells with the possible conditions (e.g., *"Over 60 years"*, *"30–60 years"* or *"30 years or younger"*). 
