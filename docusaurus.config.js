@@ -57,7 +57,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/ruyakubu/RAI-Diabetes-Hospital-Readmission-classification',
+            href: 'https://github.com/ruyakubu/rai-dashboard-workshop',
             label: 'GitHub',
             position: 'right',
           },
@@ -101,7 +101,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },*/
               {
                 label: 'GitHub',
-                href: 'https://github.com/ruyakubu/RAI-Diabetes-Hospital-Readmission-classification',
+                href: 'https://github.com/ruyakubu/rai-dashboard-workshop',
               },
             ],
           },
