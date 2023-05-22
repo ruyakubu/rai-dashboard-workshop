@@ -39,3 +39,6 @@ Similar to the Tree map, to create a cohort from the Heat Map take the following
 * ***Cohort #4:*** *Patients with "Age == 30–30 years"*
 * ***Cohort #5:*** *Patients with "Age <= 30 years"*
 
+---
+
+DISCLAIMER:  Microsoft products and services (1) are not designed, intended or made available as a medical device, and (2) are not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgment and should not be used to replace or as a substitute for professional medical advice, diagnosis, treatment, or judgment. Customers/partners are responsible for ensuring their solutions comply with applicable laws and regulations. Customers/partners also will need to thoroughly test and evaluate whether an AI tool is fit for purpose and identify and mitigate any risks or harms to end users associated with its use. 

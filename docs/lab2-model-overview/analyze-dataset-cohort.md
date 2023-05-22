@@ -79,3 +79,6 @@ The Confusion Matrix is helpful to check the rate of the model correctly making 
 * The number of False Positive (FP) is: 9
 * The number of True Negative (TN) is: 24
 
+---
+
+DISCLAIMER:  Microsoft products and services (1) are not designed, intended or made available as a medical device, and (2) are not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgment and should not be used to replace or as a substitute for professional medical advice, diagnosis, treatment, or judgment. Customers/partners are responsible for ensuring their solutions comply with applicable laws and regulations. Customers/partners also will need to thoroughly test and evaluate whether an AI tool is fit for purpose and identify and mitigate any risks or harms to end users associated with its use. 

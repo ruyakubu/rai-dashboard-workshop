@@ -37,4 +37,8 @@ The RAI dashboard displays the top data features that drove a model’s overall 
 5. As you can see from the graph, as we progress from 0 to 11 in the number of *"number_diagnoses"* the more the model's confidence in a patient not readmitted within 30 days back to the hospital decrease. 
 6. The chart shows that after 7 number of diagnoses, the class starts to negatively impact the "Not Readmitted classification", which leads to a "Readmitted" classification. This makes sense because the more a diabetic patient has other additional medical conditions, the more prone they are to getting sick and returning back to the hospital again.
 
+---
+
+DISCLAIMER:  Microsoft products and services (1) are not designed, intended or made available as a medical device, and (2) are not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgment and should not be used to replace or as a substitute for professional medical advice, diagnosis, treatment, or judgment. Customers/partners are responsible for ensuring their solutions comply with applicable laws and regulations. Customers/partners also will need to thoroughly test and evaluate whether an AI tool is fit for purpose and identify and mitigate any risks or harms to end users associated with its use. 
+
 	

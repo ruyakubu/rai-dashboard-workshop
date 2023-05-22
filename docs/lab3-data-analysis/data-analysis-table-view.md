@@ -26,5 +26,9 @@ Since we want to analyze the data for when the model is performing poorly, switc
 
 In our Diabetes Hospital Readmission use case, the Table view confirms the False Negative rates we saw in the Model Overview: Dataset cohort section. The record count from the Table shows that there 55 False Negative record where the patients are readmitted, but the model predicted not readmitted. There are 20 True Negative records where the patients were readmitted, and the model correctly predicted readmit. This is beneficial to be able to review the raw data for your cohort to see what the true vs predicted outcome are for your sample data. In addition, you can view common feature attributes for one class vs another.
 
+---
+
+DISCLAIMER:  Microsoft products and services (1) are not designed, intended or made available as a medical device, and (2) are not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgment and should not be used to replace or as a substitute for professional medical advice, diagnosis, treatment, or judgment. Customers/partners are responsible for ensuring their solutions comply with applicable laws and regulations. Customers/partners also will need to thoroughly test and evaluate whether an AI tool is fit for purpose and identify and mitigate any risks or harms to end users associated with its use. 
+
 
 

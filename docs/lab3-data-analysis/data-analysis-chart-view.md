@@ -73,3 +73,7 @@ Since *Prior_Inpatient* is one of the features from the cohort will the highest 
 ![Data Analysis age predictionY](/img/tutorial/7-da-age-predictY.png "Data Analysis age predictionY")
 	
 8. You'll see that the model prediction is affected by the patients' age groups as well. There's an overrepresentation of data for patients *"Over 60 years"* and data underrepresentation for patients *"30 years or younger"*. Here, the effects of data imbalance were evident between the model's classification of "Not readmitted" vs "Readmitted".
+
+---
+
+DISCLAIMER:  Microsoft products and services (1) are not designed, intended or made available as a medical device, and (2) are not designed or intended to be a substitute for professional medical advice, diagnosis, treatment, or judgment and should not be used to replace or as a substitute for professional medical advice, diagnosis, treatment, or judgment. Customers/partners are responsible for ensuring their solutions comply with applicable laws and regulations. Customers/partners also will need to thoroughly test and evaluate whether an AI tool is fit for purpose and identify and mitigate any risks or harms to end users associated with its use. 
