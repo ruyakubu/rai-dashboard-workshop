@@ -68,29 +68,33 @@ az account set -s <enter-your-subscription-id-here>
 ```
 ### Create Resource Group and Azure ML workspace
 
-14. Create an Azure resource group.  For location, enter ***westus***, ***westus2***, ***eastus*** or ***westeurope***.
+14.  Find an Azure region that is closest to you. Pick a location name close to you to use for this workshop (e.g. ***westus***,  ***eastus*** ***westeurope***, ***southafricanorth*** etc).  
+```shell
+az account list-locations --query "[*].name" --out tsv | sort
+```
+15. Create an Azure resource group.  
 ```shell
 az group create --name <resource-group-name> --location <location>
 ```
-15. Create an Azure Machine Learning workspace using the resource group name you created.
+16. Create an Azure Machine Learning workspace using the resource group name you created.
 ```shell
 az ml workspace create -n <workspace-name> -g <resource-group-name>
 ```
-16. Set your environment default to the resource group and Azure ML workspace.
+17. Set your environment default to the resource group and Azure ML workspace.
 ```shell
 az configure --defaults group="<resource-group-name>" workspace="<workspace-name>"
 ```
 
 ###  Run jobs for training the model and creating the RAI dashboard
 
-17. Register the training and testing dataset to the Azure Machine Learning workspace.
+18. Register the training and testing dataset to the Azure Machine Learning workspace.
 ```shell
 az ml data create -f cloud/train_data.yml
 
 az ml data create -f cloud/test_data.yml
 ```
 
-18. Create a compute instance for running the jobs.  Then, copy the compute name (e.g., ***compute-xxxxxxxxxxxx***) at the end of the run to use later.
+19. Create a compute instance for running the jobs.  Then, copy the compute name (e.g., ***compute-xxxxxxxxxxxx***) at the end of the run to use later.
 ```shell
 uuid=$(cat /dev/urandom | tr -dc 'a-z0-9' | fold -w 12 | head -n 1)
 computename=compute-$uuid
@@ -101,32 +105,31 @@ echo 'copy the compute name to use later:'
 echo $computename
 ```
 
-19. On the Cloud Shell menu, click on the "Open editor" pane to edit some of the files.
+20. On the Cloud Shell menu, click on the "Open editor" pane to edit some of the files.
 
 ![Open editor](/img/tutorial/open-editor.png "Open editor")	
 
-20. Click on the *RAI-Diabetes-Hospital-Readmission-classification* folder to expand the directory.
+21. Click on the *RAI-Diabetes-Hospital-Readmission-classification* folder to expand the directory.
 
 ![Expand directory](/img/tutorial/expand-project-directory.png "Expand directory")	
 
-21. Navigate to the "cloud/training_job.yml" file.  Then replace the placeholder for the compute name with your compute instance name that you copied earlier.  E.g., ***"compute: azureml:compute-xxxxxxxxxxxx"***.
+22. Navigate to the "cloud/training_job.yml" file.  Then replace the placeholder for the compute name with your compute instance name that you copied earlier.  E.g., ***"compute: azureml:compute-xxxxxxxxxxxx"***.
 
 ![Training job update](/img/tutorial/training-job-compute-update.png "training job update")	
 
-22. Right-click anywhere in the file, then select the "Save" option to save the file.  You can use Save short-cut keys as well.
+23. Right-click anywhere in the file, then select the "Save" option to save the file.  You can use Save short-cut keys as well.
 
 ![Save editor](/img/tutorial/save-open-editor.png "Save edit")	
 
-23. Next, navigate to the "cloud/rai_dashboard_pipeline.yml" file.  Then update the placeholder for the compute name with your compute instance name that you copied earlier.  E.g., ***"compute: azureml:compute-xxxxxxxxxxxx"***.
+24. Next, navigate to the "cloud/rai_dashboard_pipeline.yml" file.  Then update the placeholder for the compute name with your compute instance name that you copied earlier.  E.g., ***"compute: azureml:compute-xxxxxxxxxxxx"***.
 
 ![Rai pipeline update](/img/tutorial/rai-pipeline-compute-update.png "Rai pipeline update")	
 
-24. Right-click anywhere in the file, then select the "Save" option to save the file.  You can also use Save short-cut keys as well.
+25. Right-click anywhere in the file, then select the "Save" option to save the file.  You can also use Save short-cut keys as well.
 
-25. Right-click anywhere in the file, then select the "Quit" option to close the editor window.
+26. Right-click anywhere in the file, then select the "Quit" option to close the editor window.
 
-
-26. Back at the Cloud Shell command prompt, submit the job to train the model.  Wait for the job to update its run status during the training.
+27. Back at the Cloud Shell command prompt, submit the job to train the model.  Wait for the job to update its run status during the training.
 
 ```shell
 run_id=$(az ml job create --name my_training_job -f cloud/training_job.yml --query name -o tsv)
@@ -152,34 +155,34 @@ do
 done
 ```
 
-27. After the training job has completed successfully, register the model to the Azure Machine Learning workspace.
+28. After the training job has completed successfully, register the model to the Azure Machine Learning workspace.
 ```shell
 az ml model create --name rai_hospital_model --path "azureml://jobs/$run_id/outputs/model_output" --type mlflow_model
 ```
 
-28. Submit the job pipeline to create the RAI dashboard.
+29. Submit the job pipeline to create the RAI dashboard.
 ```shell
 az ml job create --file cloud/rai_dashboard_pipeline.yml
 ```
 
-29.  Log into [Azure Machine Learning studio](https://ml.azure.com) to monitor the pipeline job for creating the RAI dashboard.  
+30.  Log into [Azure Machine Learning studio](https://ml.azure.com) to monitor the pipeline job for creating the RAI dashboard.  
 
-30.  Click on your Azure ML workspace name.  Then, click on the **Pipelines** tab to get the job status.
+31.  Click on your Azure ML workspace name.  Then, click on the **Pipelines** tab to get the job status.
 
 ![Azure ML Job status](/img/tutorial/azureml_jobs_page.png "Azure ML job status page")	
 
-31.  To view the progression of the pipeline job creating the RAI dashboard, click on the job "Display name". 
+32.  To view the progression of the pipeline job creating the RAI dashboard, click on the job "Display name". 
 
 ![RAI dashboard pipeline](/img/tutorial/rai_dashboard_pipeline.png "RAI dashboard pipeline")	
 
-32.  Click on the **Models** tab on the left-hand navigation.  Then click on the name of the model to open the details page.
+33.  Click on the **Models** tab on the left-hand navigation.  Then click on the name of the model to open the details page.
 
-33.  Lastly, click on the *"Responsible AI"* tab to view the RAI dashboard.  Then, click on the "Name" to view the dashboard.
+34.  Lastly, click on the *"Responsible AI"* tab to view the RAI dashboard.  Then, click on the "Name" to view the dashboard.
 
 ![RAI dashboard tab](/img/tutorial/rai-dashboard-tab.png "RAI dashboard tab")	
 
-34. Terrific...you're ready to start using the dashboard!  
+35. Terrific...you're ready to start using the dashboard!  
 
 ![RAI dashboard](/img/tutorial/rai-dashboard.png "RAI dashboard")	
 
-35. Click on the "Next" button below to proceed to the *Error Analysis* lab.
+36. Click on the "Next" button below to proceed to the *Error Analysis* lab.
