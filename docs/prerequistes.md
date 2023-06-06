@@ -6,7 +6,9 @@ sidebar_position: 2
 
 ## Azure subscription account
 
-In order to successfully complete this workshop you'll need Azure credits.  The instructor will provide you with your account access code.  You'll need to successfully complete the azure pass redemption process for setting up your account before you can start the steps below.
+In order to successfully complete this workshop you'll need Azure credits.  The instructor will provide you with your account promo code.  You'll need to successfully complete the azure pass redemption process for setting up your account before you can start the steps below.
+
+To redeem a promo code, visit [microsoftazurepass.com](https://www.microsoftazurepass.com/) and follow these [Azure Pass redemption instructions](https://www.microsoftazurepass.com/Home/HowTo).
 
 ## Setup your cloud resources
 
