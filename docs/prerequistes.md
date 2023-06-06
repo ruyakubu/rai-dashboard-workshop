@@ -68,7 +68,7 @@ az account set -s <enter-your-subscription-id-here>
 ```
 ### Create Resource Group and Azure ML workspace
 
-14.  Find an Azure region that is closest to you. Pick a location name close to you to use for this workshop (e.g. ***westus***,  ***eastus*** ***westeurope***, ***southafricanorth*** etc).  
+14.  Find an Azure region that is closest to you. Pick a location name close to you to use for this workshop (e.g. ***westus***,  ***eastus*** ***westeurope***, ***southafricanorth***,... etc).  
 ```shell
 az account list-locations --query "[*].name" --out tsv | sort
 ```
