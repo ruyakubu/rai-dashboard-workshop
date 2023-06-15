@@ -1,8 +1,12 @@
 ---
-sidebar_position: 2
+title: Prerequisites for Azure RAI dashboard
+sidebar_position: 1
+slug: /azure-prerequistes
+pagination_next: error-analysis-tree
+pagination_prev: welcome
 ---
 
-# Prerequisites
+# (Azure) Prerequisites
 
 ## Azure subscription account
 

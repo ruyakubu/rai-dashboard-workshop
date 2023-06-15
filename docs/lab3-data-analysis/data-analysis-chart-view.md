@@ -1,9 +1,14 @@
 ---
 title: Data Analysis chart view
-sidebar_position: 2
+sidebar_position: 1
 slug: /data-analysis-chart-view
 ---
 
+# Data Analysis
+
+There are number of issues that could cause model inaccuracies.  For instance, data can be overrepresented in some cases or underrepresented in others. Not having a good balance of data can negatively skew a model’s performance. This leads to data biases causing the model not to be fair, inclusive, safe, or reliable.  The Azure Responsible AI dashboard includes a Data Analysis section for users to be able to explore and understand the dataset distributions and statistics. It provides an interactive user interface (UI) to enable users to visualize datasets based on the predicted and actual outcomes, error groups, and specific features. As a result, the insights help ML professionals to better understand and pinpoint the root cause of errors.
+
+In this lab, we will explore how to use the Data Analysis section of the Azure Responsible AI (RAI) dashboard to discover the root-cause of the model’s performance due to problematic data distribution.
 
 The chart view of the dashboard is another useful tool to visualize the data representation. You will be using the chart to compare the data distribution for the patients data.
 
@@ -73,6 +78,10 @@ Since *Prior_Inpatient* is one of the features from the cohort will the highest 
 ![Data Analysis age predictionY](/img/tutorial/7-da-age-predictY.png "Data Analysis age predictionY")
 	
 8. You'll see that the model prediction is affected by the patients' age groups as well. There's an overrepresentation of data for patients *"Over 60 years"* and data underrepresentation for patients *"30 years or younger"*. Here, the effects of data imbalance were evident between the model's classification of "Not readmitted" vs "Readmitted".
+
+As you can see from all the data analysis we performed in this lab, data is a significant blind-spot that is often missed when evaluating model performance. After tuning a model, you can increase the performance but the does not mean you have a model that is fair and inclusive. A prime example was the patient's "Race" and "Age". Although the Race feature did not come up during our error analysis or model overview investigation, the Data Analysis section of the RAI dashboard exposed this discrepancy.
+	
+This also shows that in the data analysis process, there are gray areas where data scientists will need to work very closely with business stakeholders or decision makers to understand if the data represents reality or not.
 
 ---
 

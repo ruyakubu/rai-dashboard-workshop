@@ -1,4 +1,5 @@
 ---
+id: error-analysis-tree
 title: Find model errors
 sidebar_position: 1
 slug: /find-treemap-errors
@@ -53,6 +54,8 @@ In our Diabetes Hospital Readmission model, the "Feature List" indicates the fol
 * num_procedures
 * insulin
 * discharge_destination
+
+Congratulations, you completed your first lab!
 
 ---
 

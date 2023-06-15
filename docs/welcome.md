@@ -1,4 +1,5 @@
 ---
+id: welcome
 sidebar_position: 1
 ---
 
