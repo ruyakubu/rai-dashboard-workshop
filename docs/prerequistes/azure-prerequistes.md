@@ -173,6 +173,8 @@ az ml job create --file cloud/rai_dashboard_pipeline.yml
 
 30.  Log into [Azure Machine Learning studio](https://ml.azure.com) to monitor the pipeline job for creating the RAI dashboard.  
 
+![Azure ML studio](/img/tutorial/azureml-studio.png "Azure ML studio page")
+
 31.  Click on your Azure ML workspace name.  Then, click on the **Pipelines** tab to get the job status.
 
 ![Azure ML Job status](/img/tutorial/azureml_jobs_page.png "Azure ML job status page")	
