@@ -189,6 +189,4 @@ az ml job create --file cloud/rai_dashboard_pipeline.yml
 
 35. Terrific...you're ready to start using the dashboard!  
 
-![RAI Dashboard](/img/tutorial/rai-dashboard.png "RAI Dashboard")
-
 36. Click on the "Next" button below to proceed to the *Error Analysis* lab.
