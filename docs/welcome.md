@@ -3,7 +3,7 @@ id: welcome
 sidebar_position: 1
 ---
 
-# Introduction
+# 1. Introduction
 
 This workshop is for participants to get hands-on learning on how to use the Responsible AI dashboard to debug their machine learning model in order to improve the model's performance to be more fair, inclusive, safe & reliable, and transparent.  The workshop will cover how to use Error Analysis, Model Overview, Data Analysis and Feature Importance in end-to-end machine learning life cycles.  After completing this workshop, participant will learn best practices of using Azure Responsible AI dashboard to produce AI solution that are less harmful to society and more trustworthy.
 

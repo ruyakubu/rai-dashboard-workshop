@@ -3,7 +3,7 @@ sidebar_position: 8
 slug: /references
 ---
 
-# References
+# 8. References
 
 To get a deeper understanding of all the Responsible AI dashboard features and components, refer to the following tutorials series:
 

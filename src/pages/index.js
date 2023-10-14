@@ -1,13 +1,15 @@
 import React from 'react';
 import clsx from 'clsx';
-import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
+
 import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  const callToAction = "Hands-on Workshops 👉🏽";
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -17,7 +19,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/welcome">
-            Workshop - 2hrs ⏱️
+              {callToAction}
           </Link>
         </div>
       </div>
@@ -29,9 +31,12 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Skill up on ${siteConfig.title}`}
+      description="Go from Principles to Practice with Hands-on Workshops">
       <HomepageHeader />
+      <main>
+        <HomepageFeatures />
+      </main>
     </Layout>
   );
 }

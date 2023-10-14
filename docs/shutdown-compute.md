@@ -3,7 +3,7 @@ sidebar_position: 7
 slug: /stop-compute
 ---
 
-# Shutdown
+# 7. Shutdown
 
 Be sure to shutdown the compute instance at the end of this workshop so you do not run out of credits.
 
