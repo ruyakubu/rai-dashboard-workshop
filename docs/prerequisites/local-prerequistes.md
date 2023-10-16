@@ -1,9 +1,7 @@
 ---
-title: Prerequisites for Open-Source RAI dashboard
+title: 2.2 Open-Source RAI dashboard
 sidebar_position: 2
 slug: /opensource-prerequistes
-pagination_next: error-analysis-tree
-pagination_prev: welcome
 ---
 
 # (OSS) Prerequisites

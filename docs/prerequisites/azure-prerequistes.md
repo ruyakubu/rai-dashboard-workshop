@@ -1,9 +1,7 @@
 ---
-title: Prerequisites for Azure RAI dashboard
+title: 2.1 Azure RAI dashboard
 sidebar_position: 1
 slug: /azure-prerequistes
-pagination_next: error-analysis-tree
-pagination_prev: welcome
 ---
 
 # (Azure) Prerequisites
@@ -190,7 +188,5 @@ az ml job create --file cloud/rai_dashboard_pipeline.yml
 ![RAI dashboard tab](/img/tutorial/rai-dashboard-tab.png "RAI dashboard tab")	
 
 35. Terrific...you're ready to start using the dashboard!  
-
-![RAI dashboard](/img/tutorial/rai-dashboard.png "RAI dashboard")	
 
 36. Click on the "Next" button below to proceed to the *Error Analysis* lab.
