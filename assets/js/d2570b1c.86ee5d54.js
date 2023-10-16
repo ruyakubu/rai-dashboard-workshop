@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkrai_workshop=self.webpackChunkrai_workshop||[]).push([[495],{3023:a=>{a.exports=JSON.parse('{"allTagsPath":"/rai-dashboard-workshop/blog/tags","slug":"/rai-dashboard-workshop/blog/tags/hola","name":"hola","count":1,"permalink":"/rai-dashboard-workshop/blog/tags/hola"}')}}]);
