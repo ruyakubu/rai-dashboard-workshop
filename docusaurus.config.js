@@ -9,10 +9,10 @@ const config = {
 
   title: 'Responsible AI Training',
   tagline: 'Go From Principles To Practice',
-  url: 'https://nitya.github.io',
+  url: 'https://ruyakubu.github.io',
   baseUrl: '/rai-dashboard-workshop/',
 
-  organizationName: 'nitya', 
+  organizationName: 'ruyakubu', 
   projectName: 'rai-dashboard-workshop', 
   deploymentBranch: 'gh-pages',
   favicon: 'img/favicon.ico',
