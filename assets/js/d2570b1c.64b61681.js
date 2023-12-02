@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[6495],{3023:a=>{a.exports=JSON.parse('{"label":"hola","permalink":"/rai-dashboard-workshop/blog/tags/hola","allTagsPath":"/rai-dashboard-workshop/blog/tags","count":1}')}}]);
