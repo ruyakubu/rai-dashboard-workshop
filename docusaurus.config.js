@@ -30,7 +30,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          editUrl:
+            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -56,7 +61,20 @@ const config = {
             sidebarId: 'mySidebar',
             position: 'left',
             label: '1. Dashboard',
+          },          
+          {
+            type: 'doc',
+            docId: 'azure-content-safety/cs-intro',
+            position: 'left',
+            label: '2. Content Safety',
           },
+          {
+            type: 'doc',
+            docId: 'azure-prompt-flow/pf-intro',
+            position: 'left',
+            label: '3. Prompt Flow',
+          }, 
+          //{to: 'blog', label: 'Blog', position: 'left'},         
           {            
             href: 'https://github.com/ruyakubu/rai-dashboard-workshop',
             position: "right",

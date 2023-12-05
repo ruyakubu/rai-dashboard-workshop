@@ -11,7 +11,7 @@ const FeatureList = [
     topiclink: 'https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard?view=azureml-api-2',
     description: (
       <>
-        The Responsible AI dashboard provides a single interface to help you implement Responsible AI in practice effectively and efficiently.
+        To support AI practitioners, the Responsible AI dashboard enables debugging capabilities that can be used throughout the machine learning lifecycle.  This lesson teaches how to optimize ML models for fairness, explainability, and identify other responsible AI issues.
       </>
     ),
   },
@@ -23,7 +23,7 @@ const FeatureList = [
     topiclink: 'https://learn.microsoft.com//azure/ai-services/content-safety/overview',
     description: (
       <>
-        Azure AI Content Safety detects harmful user-generated and AI-generated content in applications and services
+        When working with LLMs and generative AI solutions, the responses are dynamic and sometimes unpredictable. This lesson illustrates how to use Content Safety to add safety guardrails to detect and prevent offensive or undesirable Prompts and Outputs from the model.
       </>
     ),
   },
@@ -35,7 +35,7 @@ const FeatureList = [
     topiclink: 'https://learn.microsoft.com/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow?view=azureml-api-2',
     description: (
       <>
-        Prompt Flow is a tool designed to streamline the entire development cycle of AI apps powered by Large Language Models (LLMs). 
+        Prompt Flow is a tool designed to streamline the development AI apps powered by LLMs. This lesson will show how to create visual graphs to use LLMs, prompts, embedding your data, vector indexes, and Python tools. Finally, users will learn how to evaluate the AI flow for groundedness, accuracy, relevance etc.
       </>
     ),
   },
